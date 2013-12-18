@@ -7,7 +7,15 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-gem 'rails_12factor', group: :production
+gem 'rails_12factor', :group => :production
+
+gem 'devise'
+gem 'simple_form'
+gem 'rails-footnotes', '~> 3.7.9', :group => :development
+gem 'jquery-ui-rails'
+gem "twitter-bootstrap-rails"
+# gem for simple_form input 'country' in forms
+gem 'country_select'
 
 
 # Gems used only for assets and not required

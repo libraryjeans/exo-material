@@ -1,14 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>ExoMaterial</title>
+  <title>ExOfficio Material Database</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="#" class="brand">ExOfficio Material Database</a>
+				<ul class="nav">
+					<li><%= link_to "Fabric Mills", mills_path %></li>
+				</ul>
+				<ul class="nav pull-right">
+					<% if user_signed_in? %>
+						<li><%= link_to current_user.first_name, edit_user_registration_path %></li>
+						<li><%= link_to "Log out", logout_path %></li>
+					<% else %>
+						<li><%= link_to "Register", register_path %></li>
+						<li><%= link_to "Login", login_path %></li>
+					<%end%>
+				</ul>	
+			</div>	
+		</div>	
+	</div>
+	<div class="container">
+		<!-- rather than writing an if for each flash, iterate over types -->
+		<% flash.each do  |type, message| %>
+			<!-- flash_class in app/helpers/application_helper.rb  -->
+			<div class="alert <%= flash_class type %>">
+				<button class="close" data-dismiss="alert">x</button>
+				<%= message %>
+			</div>	
+		<% end %>					
+		<%= yield %>
+	</div>		
 </body>
 </html>

@@ -1,0 +1,28 @@
+<%= minimal_form_for(@mill, html: {class: "form-horizontal"}) do |f| %>
+    <% if @status.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@status.errors.count, "error") %> prohibited this status from being saved:</h2>
+
+      <ul>
+      <% @status.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :city %>
+    <%= f.input :state,  placeholder: 'State/Province'  %>
+    <%= f.input :postal_code %>
+    <%= f.country_select :country, ["United States"] %>
+    <%= f.input :telephone %>
+    <%= f.input :fax %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

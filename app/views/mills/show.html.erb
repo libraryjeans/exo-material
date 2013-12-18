@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @mill.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @mill.address %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @mill.city %>
+</p>
+
+<p>
+  <b>Postal code:</b>
+  <%= @mill.postal_code %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @mill.country %>
+</p>
+
+<p>
+  <b>Telephone:</b>
+  <%= @mill.telephone %>
+</p>
+
+<p>
+  <b>Fax:</b>
+  <%= @mill.fax %>
+</p>
+
+
+<%= link_to 'Edit', edit_mill_path(@mill) %> |
+<%= link_to 'Back', mills_path %>

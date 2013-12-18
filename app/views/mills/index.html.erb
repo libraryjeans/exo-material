@@ -1,0 +1,35 @@
+<h1>Listing mills</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>Postal code</th>
+    <th>Country</th>
+    <th>Telephone</th>
+    <th>Fax</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @mills.each do |mill| %>
+  <tr>
+    <td><%= mill.name %></td>
+    <td><%= mill.address %></td>
+    <td><%= mill.city %></td>
+    <td><%= mill.postal_code %></td>
+    <td><%= mill.country %></td>
+    <td><%= mill.telephone %></td>
+    <td><%= mill.fax %></td>
+    <td><%= link_to 'Show', mill %></td>
+    <td><%= link_to 'Edit', edit_mill_path(mill) %></td>
+    <td><%= link_to 'Destroy', mill, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Mill', new_mill_path %>
