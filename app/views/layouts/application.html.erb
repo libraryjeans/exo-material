@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>ExOfficio Material Database</title>
+  <title>ExOfficio Fabric Database</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -10,9 +10,14 @@
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
-				<a href="#" class="brand">ExOfficio Material Database</a>
+				<a href="/" class="brand">ExOfficio Fabric Database</a>
 				<ul class="nav">
-					<li><%= link_to "Fabric Mills", mills_path %></li>
+					<% if user_signed_in? && current_user.role == "admin" %>
+						<li><%= link_to "Fabric Mills", mills_path %></li>
+						<li><%= link_to "Fabrics", fabrics_path %></li>
+						<li><%= link_to "FIS", fabric_information_sheets_path %></li>
+						<li><td><%= link_to "All Users", profiles_path %></td></li>
+					<%end%>
 				</ul>
 				<ul class="nav pull-right">
 					<% if user_signed_in? %>
@@ -20,7 +25,7 @@
 						<li><%= link_to "Log out", logout_path %></li>
 					<% else %>
 						<li><%= link_to "Register", register_path %></li>
-						<li><%= link_to "Login", login_path %></li>
+						<li><%= link_to "Sign in", login_path %></li>
 					<%end%>
 				</ul>	
 			</div>	

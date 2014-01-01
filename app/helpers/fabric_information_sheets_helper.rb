@@ -1,0 +1,2 @@
+module FabricInformationSheetsHelper
+end

@@ -1,0 +1,47 @@
+<%= simple_form_for(@fabric_information_sheet) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :article_number %>
+    <%= f.input :fiber_content %>
+    <%= f.input :construction %>
+    <%= f.input :yarn_count %>
+    <%= f.input :gauge %>
+    <%= f.input :weight %>
+    <%= f.input :width_full %>
+    <%= f.input :width_cuttable %>
+    <%= f.input :finishing %>
+    <%= f.input :features %>
+    <%= f.input :care %>
+    <%= f.input :dyeing_method %>
+    <%= f.input :dobby_jacquard %>
+    <%= f.input :pattern_repeat %>
+    <%= f.input :print_method %>
+    <%= f.input :warp_weft %>
+    <%= f.input :country %>
+    <%= f.input :sewing_factory %>
+    <%= f.input :unit_price %>
+    <%= f.input :price_date_agree %>
+    <%= f.input :bulk_order_color %>
+    <%= f.input :bulk_order_total %>
+    <%= f.input :bulk_lead %>
+    <%= f.input :sample_order_color %>
+    <%= f.input :sample_order_total %>
+    <%= f.input :sample_lead %>
+    <%= f.input :bulk_surcharge_order %>
+    <%= f.input :sample_surcharge_order %>
+    <%= f.input :surcharge_note %>
+    <%= f.input :blue_sign_cert %>
+    <%= f.input :SGS_cert %>
+    <%= f.input :oke_tex_cert %>
+    <%= f.input :other_cert %>
+    <%= f.input :exo_standards %>
+    <%= f.input :exo_standards_note %>
+    <%= f.input :standards_sent %>
+    <%= f.input :standards_received %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

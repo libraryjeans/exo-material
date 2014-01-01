@@ -1,0 +1,85 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  article_number: MyString
+  fiber_content: MyString
+  construction: MyString
+  yarn_count: MyString
+  gauge: MyString
+  weight: 1
+  width_full: 1
+  width_cuttable: 1
+  finishing: MyString
+  features: MyString
+  care: MyText
+  dyeing_method: MyString
+  dobby_jacquard: MyString
+  pattern_repeat: MyString
+  print_method: MyString
+  warp_weft: MyString
+  country: MyString
+  sewing_factory: MyString
+  unit_price: 9.99
+  price_date_agree: false
+  bulk_order_color: 1
+  bulk_order_total: 1
+  bulk_lead: 1
+  sample_order_color: 1
+  sample_order_total: 1
+  sample_lead: 1
+  bulk_surcharge_order: 1
+  sample_surcharge_order: 1
+  surcharge_note: MyString
+  blue_sign_cert: false
+  SGS_cert: false
+  oke_tex_cert: false
+  other_cert: MyString
+  exo_standards: false
+  exo_standards_note: MyString
+  standards_sent: false
+  standards_received: false
+  references: 
+  references: 
+  references: 
+
+two:
+  article_number: MyString
+  fiber_content: MyString
+  construction: MyString
+  yarn_count: MyString
+  gauge: MyString
+  weight: 1
+  width_full: 1
+  width_cuttable: 1
+  finishing: MyString
+  features: MyString
+  care: MyText
+  dyeing_method: MyString
+  dobby_jacquard: MyString
+  pattern_repeat: MyString
+  print_method: MyString
+  warp_weft: MyString
+  country: MyString
+  sewing_factory: MyString
+  unit_price: 9.99
+  price_date_agree: false
+  bulk_order_color: 1
+  bulk_order_total: 1
+  bulk_lead: 1
+  sample_order_color: 1
+  sample_order_total: 1
+  sample_lead: 1
+  bulk_surcharge_order: 1
+  sample_surcharge_order: 1
+  surcharge_note: MyString
+  blue_sign_cert: false
+  SGS_cert: false
+  oke_tex_cert: false
+  other_cert: MyString
+  exo_standards: false
+  exo_standards_note: MyString
+  standards_sent: false
+  standards_received: false
+  references: 
+  references: 
+  references: 

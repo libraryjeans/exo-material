@@ -1,0 +1,101 @@
+<h1>Listing fabric_information_sheets</h1>
+
+<table>
+  <tr>
+    <th>Article number</th>
+    <th>Fiber content</th>
+    <th>Construction</th>
+    <th>Yarn count</th>
+    <th>Gauge</th>
+    <th>Weight</th>
+    <th>Width full</th>
+    <th>Width cuttable</th>
+    <th>Finishing</th>
+    <th>Features</th>
+    <th>Care</th>
+    <th>Dyeing method</th>
+    <th>Dobby jacquard</th>
+    <th>Pattern repeat</th>
+    <th>Print method</th>
+    <th>Warp weft</th>
+    <th>Country</th>
+    <th>Sewing factory</th>
+    <th>Unit price</th>
+    <th>Price date agree</th>
+    <th>Bulk order color</th>
+    <th>Bulk order total</th>
+    <th>Bulk lead</th>
+    <th>Sample order color</th>
+    <th>Sample order total</th>
+    <th>Sample lead</th>
+    <th>Bulk surcharge order</th>
+    <th>Sample surcharge order</th>
+    <th>Surcharge note</th>
+    <th>Blue sign cert</th>
+    <th>Sgs cert</th>
+    <th>Oke tex cert</th>
+    <th>Other cert</th>
+    <th>Exo standards</th>
+    <th>Exo standards note</th>
+    <th>Standards sent</th>
+    <th>Standards received</th>
+    <th>References</th>
+    <th>References</th>
+    <th>References</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fabric_information_sheets.each do |fabric_information_sheet| %>
+  <tr>
+    <td><%= fabric_information_sheet.article_number %></td>
+    <td><%= fabric_information_sheet.fiber_content %></td>
+    <td><%= fabric_information_sheet.construction %></td>
+    <td><%= fabric_information_sheet.yarn_count %></td>
+    <td><%= fabric_information_sheet.gauge %></td>
+    <td><%= fabric_information_sheet.weight %></td>
+    <td><%= fabric_information_sheet.width_full %></td>
+    <td><%= fabric_information_sheet.width_cuttable %></td>
+    <td><%= fabric_information_sheet.finishing %></td>
+    <td><%= fabric_information_sheet.features %></td>
+    <td><%= fabric_information_sheet.care %></td>
+    <td><%= fabric_information_sheet.dyeing_method %></td>
+    <td><%= fabric_information_sheet.dobby_jacquard %></td>
+    <td><%= fabric_information_sheet.pattern_repeat %></td>
+    <td><%= fabric_information_sheet.print_method %></td>
+    <td><%= fabric_information_sheet.warp_weft %></td>
+    <td><%= fabric_information_sheet.country %></td>
+    <td><%= fabric_information_sheet.sewing_factory %></td>
+    <td><%= fabric_information_sheet.unit_price %></td>
+    <td><%= fabric_information_sheet.price_date_agree %></td>
+    <td><%= fabric_information_sheet.bulk_order_color %></td>
+    <td><%= fabric_information_sheet.bulk_order_total %></td>
+    <td><%= fabric_information_sheet.bulk_lead %></td>
+    <td><%= fabric_information_sheet.sample_order_color %></td>
+    <td><%= fabric_information_sheet.sample_order_total %></td>
+    <td><%= fabric_information_sheet.sample_lead %></td>
+    <td><%= fabric_information_sheet.bulk_surcharge_order %></td>
+    <td><%= fabric_information_sheet.sample_surcharge_order %></td>
+    <td><%= fabric_information_sheet.surcharge_note %></td>
+    <td><%= fabric_information_sheet.blue_sign_cert %></td>
+    <td><%= fabric_information_sheet.SGS_cert %></td>
+    <td><%= fabric_information_sheet.oke_tex_cert %></td>
+    <td><%= fabric_information_sheet.other_cert %></td>
+    <td><%= fabric_information_sheet.exo_standards %></td>
+    <td><%= fabric_information_sheet.exo_standards_note %></td>
+    <td><%= fabric_information_sheet.standards_sent %></td>
+    <td><%= fabric_information_sheet.standards_received %></td>
+    <td><%= fabric_information_sheet.references %></td>
+    <td><%= fabric_information_sheet.references %></td>
+    <td><%= fabric_information_sheet.references %></td>
+    <td><%= link_to 'Show', fabric_information_sheet %></td>
+    <td><%= link_to 'Edit', edit_fabric_information_sheet_path(fabric_information_sheet) %></td>
+    <td><%= link_to 'Destroy', fabric_information_sheet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Fabric information sheet', new_fabric_information_sheet_path %>

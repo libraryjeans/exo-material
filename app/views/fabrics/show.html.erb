@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Part number:</b>
+  <%= @fabric.part_number %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @fabric.name %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @fabric.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_fabric_path(@fabric) %> |
+<%= link_to 'Back', fabrics_path %>
