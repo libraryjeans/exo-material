@@ -15,7 +15,6 @@
 					<% if user_signed_in? && current_user.role == "admin" %>
 						<li><%= link_to "Fabric Mills", mills_path %></li>
 						<li><%= link_to "Fabrics", fabrics_path %></li>
-						<li><%= link_to "FIS", fabric_information_sheets_path %></li>
 						<li><td><%= link_to "All Users", profiles_path %></td></li>
 					<%end%>
 				</ul>

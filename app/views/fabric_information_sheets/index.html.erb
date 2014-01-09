@@ -39,12 +39,6 @@
     <th>Exo standards note</th>
     <th>Standards sent</th>
     <th>Standards received</th>
-    <th>References</th>
-    <th>References</th>
-    <th>References</th>
-    <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
 <% @fabric_information_sheets.each do |fabric_information_sheet| %>
@@ -86,9 +80,6 @@
     <td><%= fabric_information_sheet.exo_standards_note %></td>
     <td><%= fabric_information_sheet.standards_sent %></td>
     <td><%= fabric_information_sheet.standards_received %></td>
-    <td><%= fabric_information_sheet.references %></td>
-    <td><%= fabric_information_sheet.references %></td>
-    <td><%= fabric_information_sheet.references %></td>
     <td><%= link_to 'Show', fabric_information_sheet %></td>
     <td><%= link_to 'Edit', edit_fabric_information_sheet_path(fabric_information_sheet) %></td>
     <td><%= link_to 'Destroy', fabric_information_sheet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -98,4 +89,4 @@
 
 <br />
 
-<%= link_to 'New Fabric information sheet', new_fabric_information_sheet_path %>
+<%= link_to 'New FIS', new_fabric_information_sheet_path %>
